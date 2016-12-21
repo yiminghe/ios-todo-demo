@@ -16,6 +16,14 @@
 		1031DD851CDC40D400B5C908 /* TodoListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031DD841CDC40D400B5C908 /* TodoListUITests.m */; };
 		1031DD941CDE23D900B5C908 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031DD931CDE23D900B5C908 /* ToDoListTableViewController.m */; };
 		1031DD971CE1B97A00B5C908 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1031DD961CE1B97A00B5C908 /* ToDoItem.m */; };
+		1092B3311E0A612300F2C9AB /* YGNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 1092B32D1E0A612300F2C9AB /* YGNodeList.c */; };
+		1092B3321E0A612300F2C9AB /* Yoga.c in Sources */ = {isa = PBXBuildFile; fileRef = 1092B32F1E0A612300F2C9AB /* Yoga.c */; };
+		1092B3351E0A612B00F2C9AB /* UIView+Yoga.m in Sources */ = {isa = PBXBuildFile; fileRef = 1092B3341E0A612B00F2C9AB /* UIView+Yoga.m */; };
+		1092B3391E0A658200F2C9AB /* YGEnums.h in yoga */ = {isa = PBXBuildFile; fileRef = 1092B32B1E0A612300F2C9AB /* YGEnums.h */; };
+		1092B33A1E0A658200F2C9AB /* YGMacros.h in yoga */ = {isa = PBXBuildFile; fileRef = 1092B32C1E0A612300F2C9AB /* YGMacros.h */; };
+		1092B33B1E0A658200F2C9AB /* YGNodeList.h in yoga */ = {isa = PBXBuildFile; fileRef = 1092B32E1E0A612300F2C9AB /* YGNodeList.h */; };
+		1092B33C1E0A658200F2C9AB /* Yoga.h in yoga */ = {isa = PBXBuildFile; fileRef = 1092B3301E0A612300F2C9AB /* Yoga.h */; };
+		1092B33F1E0A65AA00F2C9AB /* UIView+Yoga.h in YogaKit */ = {isa = PBXBuildFile; fileRef = 1092B3331E0A612B00F2C9AB /* UIView+Yoga.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,34 @@
 			remoteInfo = TodoList;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1092B3381E0A656100F2C9AB /* yoga */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/yoga;
+			dstSubfolderSpec = 16;
+			files = (
+				1092B3391E0A658200F2C9AB /* YGEnums.h in yoga */,
+				1092B33A1E0A658200F2C9AB /* YGMacros.h in yoga */,
+				1092B33B1E0A658200F2C9AB /* YGNodeList.h in yoga */,
+				1092B33C1E0A658200F2C9AB /* Yoga.h in yoga */,
+			);
+			name = yoga;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1092B33E1E0A659B00F2C9AB /* YogaKit */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/YogaKit;
+			dstSubfolderSpec = 16;
+			files = (
+				1092B33F1E0A65AA00F2C9AB /* UIView+Yoga.h in YogaKit */,
+			);
+			name = YogaKit;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1031DD5C1CDC40D400B5C908 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +91,14 @@
 		1031DD931CDE23D900B5C908 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 		1031DD951CE1B97A00B5C908 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		1031DD961CE1B97A00B5C908 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		1092B32B1E0A612300F2C9AB /* YGEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGEnums.h; path = yoga/YGEnums.h; sourceTree = "<group>"; };
+		1092B32C1E0A612300F2C9AB /* YGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = yoga/YGMacros.h; sourceTree = "<group>"; };
+		1092B32D1E0A612300F2C9AB /* YGNodeList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = YGNodeList.c; path = yoga/YGNodeList.c; sourceTree = "<group>"; };
+		1092B32E1E0A612300F2C9AB /* YGNodeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGNodeList.h; path = yoga/YGNodeList.h; sourceTree = "<group>"; };
+		1092B32F1E0A612300F2C9AB /* Yoga.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Yoga.c; path = yoga/Yoga.c; sourceTree = "<group>"; };
+		1092B3301E0A612300F2C9AB /* Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Yoga.h; path = yoga/Yoga.h; sourceTree = "<group>"; };
+		1092B3331E0A612B00F2C9AB /* UIView+Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Yoga.h"; path = "YogaKit/UIView+Yoga.h"; sourceTree = "<group>"; };
+		1092B3341E0A612B00F2C9AB /* UIView+Yoga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Yoga.m"; path = "YogaKit/UIView+Yoga.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +129,8 @@
 		1031DD531CDC40D400B5C908 = {
 			isa = PBXGroup;
 			children = (
+				1092B3291E0A611200F2C9AB /* yoga */,
+				1092B32A1E0A611600F2C9AB /* YogaKit */,
 				1031DD5E1CDC40D400B5C908 /* TodoList */,
 				1031DD781CDC40D400B5C908 /* TodoListTests */,
 				1031DD831CDC40D400B5C908 /* TodoListUITests */,
@@ -147,6 +193,28 @@
 			path = TodoListUITests;
 			sourceTree = "<group>";
 		};
+		1092B3291E0A611200F2C9AB /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				1092B32B1E0A612300F2C9AB /* YGEnums.h */,
+				1092B32C1E0A612300F2C9AB /* YGMacros.h */,
+				1092B32D1E0A612300F2C9AB /* YGNodeList.c */,
+				1092B32E1E0A612300F2C9AB /* YGNodeList.h */,
+				1092B32F1E0A612300F2C9AB /* Yoga.c */,
+				1092B3301E0A612300F2C9AB /* Yoga.h */,
+			);
+			name = yoga;
+			sourceTree = "<group>";
+		};
+		1092B32A1E0A611600F2C9AB /* YogaKit */ = {
+			isa = PBXGroup;
+			children = (
+				1092B3331E0A612B00F2C9AB /* UIView+Yoga.h */,
+				1092B3341E0A612B00F2C9AB /* UIView+Yoga.m */,
+			);
+			name = YogaKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +222,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1031DD891CDC40D400B5C908 /* Build configuration list for PBXNativeTarget "TodoList" */;
 			buildPhases = (
+				1092B3381E0A656100F2C9AB /* yoga */,
+				1092B33E1E0A659B00F2C9AB /* YogaKit */,
 				1031DD581CDC40D400B5C908 /* Sources */,
 				1031DD591CDC40D400B5C908 /* Frameworks */,
 				1031DD5A1CDC40D400B5C908 /* Resources */,
@@ -279,8 +349,11 @@
 				1031DD671CDC40D400B5C908 /* AddToDoItemViewController.m in Sources */,
 				1031DD971CE1B97A00B5C908 /* ToDoItem.m in Sources */,
 				1031DD641CDC40D400B5C908 /* AppDelegate.m in Sources */,
+				1092B3321E0A612300F2C9AB /* Yoga.c in Sources */,
+				1092B3351E0A612B00F2C9AB /* UIView+Yoga.m in Sources */,
 				1031DD611CDC40D400B5C908 /* main.m in Sources */,
 				1031DD941CDE23D900B5C908 /* ToDoListTableViewController.m in Sources */,
+				1092B3311E0A612300F2C9AB /* YGNodeList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +569,7 @@
 				1031DD8B1CDC40D400B5C908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1031DD8C1CDC40D400B5C908 /* Build configuration list for PBXNativeTarget "TodoListTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +578,7 @@
 				1031DD8E1CDC40D400B5C908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1031DD8F1CDC40D400B5C908 /* Build configuration list for PBXNativeTarget "TodoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +587,7 @@
 				1031DD911CDC40D400B5C908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
