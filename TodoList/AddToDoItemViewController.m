@@ -54,26 +54,32 @@
                                target:self
                                action:@selector(cancelAddNewItem)];
     self.navigationItem.leftBarButtonItem = cancel;
+    
+    [self.view yg_setUsesYoga: true];
+    
+    UIView *container = [[UIView alloc] init];
+    [container yg_setUsesYoga:true];
+    [container yg_setFlexDirection:YGFlexDirectionRow];
+    [container yg_setPadding:80 forEdge:YGEdgeTop];
+    [container yg_setPadding:20 forEdge:YGEdgeHorizontal];
+    
+    UILabel *label = [[UILabel alloc] init];
+    [label yg_setUsesYoga:true];
+    [label yg_setMargin:10 forEdge:(YGEdgeRight)];
+    label.text = @"name: ";
+    
     self.textField = [[UITextField alloc] init];
+    [self.textField yg_setUsesYoga:true];
+    [self.textField yg_setFlexGrow:1];
+    [self.textField yg_setPadding:10 forEdge:YGEdgeAll];
+    
     self.textField.delegate = self;
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
-    [self.view addSubview:self.textField];
-    self.textField.translatesAutoresizingMaskIntoConstraints = NO;
     
-    NSDictionary *nameMap = @{@"textField" : self.textField};
-    NSArray *horizontalConstraints =
-    [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[textField]-20-|"
-                                            options:0
-                                            metrics:nil
-                                              views:nameMap];
-    NSArray *verticalConstraints =
-    [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[textField(==30)]"
-                                            options:0
-                                            metrics:nil
-                                              views:nameMap];
-    [self.view addConstraints:horizontalConstraints];
-    [self.view addConstraints:verticalConstraints];
-
+    [container addSubview:label];
+    [container addSubview:self.textField];
+    [self.view addSubview:container];
+    [self.view yg_applyLayout];
 }
 
 - (void)didReceiveMemoryWarning {
